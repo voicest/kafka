@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: api
+spec:
+  containers:
+    - name: api
+      image: docker.io/voicest/api:v0.1.0
+      ports:
+        - containerPort: 80
